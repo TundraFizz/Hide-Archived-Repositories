@@ -1,0 +1,47 @@
+.hide-archived-repositories {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.text-hide-archived-repositories {
+  display: inline-block;
+}
+
+.btn-hide-archived-repositories {
+  position: relative;
+  display: inline-block;
+  top: 3px;
+  width: 20px;
+  height: 16px;
+  margin-left: 2px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.btn-hide-archived-repositories[status="yes"] {
+  background-color: #6581ff;
+}
+
+.hide-archived-repositories:hover .btn-hide-archived-repositories[status="yes"] {
+  background-color: #93a7ff;
+}
+
+.hide-archived-repositories:active .btn-hide-archived-repositories[status="yes"] {
+  background-color: #4567ff;
+}
+
+.btn-hide-archived-repositories[status="no"] {
+  background-color: #009000;
+}
+
+.hide-archived-repositories:hover .btn-hide-archived-repositories[status="no"] {
+  background-color: #00bd00;
+}
+
+.hide-archived-repositories:active .btn-hide-archived-repositories[status="no"] {
+  background-color: #006700;
+}

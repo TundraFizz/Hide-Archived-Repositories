@@ -1,0 +1,42 @@
+{
+  "name": "Hide Archived Repositories",
+  "short_name": "HAR",
+  "author": "Tundra Fizz",
+  "description": "Adds a switch on the GitHub repository page to toggle hiding archived repositories",
+  "version": "1.0.0",
+
+  "icons": {
+    "16": "icons/icon.png",
+    "32": "icons/icon.png",
+    "48": "icons/icon.png",
+    "64": "icons/icon.png",
+    "96": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+
+  "content_scripts": [{
+    "matches": [
+      "https://github.com/*"
+    ],
+    "css": [
+      "./css/main.css"
+    ],
+    "js": [
+      "./js/jquery.js",
+      "./js/cookie.js",
+      "./js/main.js"
+    ],
+    "run_at": "document_end"
+  }],
+
+  "web_accessible_resources": [
+    "img/*.gif",
+    "img/*.png"
+  ],
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "manifest_version": 2
+}
